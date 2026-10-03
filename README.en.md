@@ -31,10 +31,10 @@ After a match, give it the demo. It answers:
    - whether anyone could have traded, counted as the time a teammate needs to run there, not through walls.
 
    You get one main cause and what to do next time.
-3. **What should I have been doing?** On all eight competitive maps (Mirage, Dust2, Inferno, Nuke, Overpass, Ancient, Anubis, Train), round situations and CT setups show:
+3. **What should I have been doing?** On all nine competitive maps (Mirage, Dust2, Inferno, Nuke, Overpass, Ancient, Anubis, Train, Vertigo), round situations and CT setups show:
    - what the team was executing and what was missing;
    - which role made sense for you, and what you actually did.
-4. **How is a tactic played?** The tactical academy (57 tactics on eight maps) explains each tactic and plays a pro round of it beside the text: Budapest Major 2025 and Cologne Major 2026 games.
+4. **How is a tactic played?** The tactical academy (63 tactics on nine maps) explains each tactic and plays a pro round of it beside the text: games from the Copenhagen 2024, Austin 2025, Budapest 2025 and Cologne 2026 Majors.
 5. **What keeps going wrong?** Across matches, compared with the other nine players in each lobby, split into aim, duels, teamwork, utility and survival. Training goals track your progress every match.
 
 Every conclusion comes from demo data and a deterministic rule engine, with evidence you can click to jump to that moment. Mark a finding as wrong and it leaves your stats. The AI coach is optional; everything works without an API key.

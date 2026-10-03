@@ -72,4 +72,13 @@
 
 从公开的比赛 Demo 提取的位置和事件数据（不含 Demo 文件和任何游戏资源），用于战术学院的范例（ADR-0039）：
 
-- StarLadder Budapest Major 2025 半决赛 Spirit vs Vitality，Mirage 与 Dust2 的若干回合。来源：https://www.hltv.org/matches/2388128/spirit-vs-vitality-starladder-budapest-major-2025
+- BLAST.tv Austin Major 2025 半决赛 MOUZ vs Vitality，Train 的若干回合。来源：https://www.hltv.org/matches/2382618/mouz-vs-vitality-blasttv-austin-major-2025
+- StarLadder Budapest Major 2025 半决赛 Spirit vs Vitality，Dust2 与 Mirage 的若干回合。来源：https://www.hltv.org/matches/2388128/spirit-vs-vitality-starladder-budapest-major-2025
+- IEM Cologne Major 2026 第三阶段 Spirit vs 9z，Overpass 的若干回合。来源：https://www.hltv.org/matches/2394986/spirit-vs-9z-iem-cologne-major-2026
+- IEM Cologne Major 2026 半决赛 Spirit vs Falcons，Anubis 的若干回合。来源：https://www.hltv.org/matches/2395001/iem-cologne-major-2026-semi-final-2-iem-cologne-major-2026
+- PGL CS2 Major Copenhagen 2024 四分之一决赛 Spirit vs FaZe，Vertigo 的若干回合。来源：https://www.hltv.org/matches/2370722/spirit-vs-faze-pgl-cs2-major-copenhagen-2024
+- IEM Cologne Major 2026 决赛 Falcons vs FURIA，Anubis 的若干回合。来源：https://www.hltv.org/matches/2395002/iem-cologne-major-2026-grand-final-iem-cologne-major-2026
+- StarLadder Budapest Major 2025 半决赛 FaZe vs NAVI，Ancient 与 Nuke 的若干回合。来源：https://www.hltv.org/matches/2388129/starladder-budapest-major-2025-semi-final-2-starladder-budapest-major-2025
+- StarLadder Budapest Major 2025 四分之一决赛 NAVI vs FURIA，Train 的若干回合。来源：https://www.hltv.org/matches/2388127/furia-vs-natus-vincere-starladder-budapest-major-2025
+- IEM Cologne Major 2026 四分之一决赛 G2 vs Spirit，Overpass 的若干回合。来源：https://www.hltv.org/matches/2394998/match
+- StarLadder Budapest Major 2025 决赛 Vitality vs FaZe，Inferno 的若干回合。来源：https://www.hltv.org/matches/2388130/vitality-vs-faze-starladder-budapest-major-2025
