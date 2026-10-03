@@ -73,6 +73,7 @@
 从公开的比赛 Demo 提取的位置和事件数据（不含 Demo 文件和任何游戏资源），用于战术学院的范例（ADR-0039）：
 
 - BLAST.tv Austin Major 2025 半决赛 MOUZ vs Vitality，Train 的若干回合。来源：https://www.hltv.org/matches/2382618/mouz-vs-vitality-blasttv-austin-major-2025
+- StarLadder Budapest Major 2025 第三阶段 Passion UA vs Liquid，Train 的若干回合。来源：https://www.hltv.org/matches/2388112/passion-ua-vs-liquid-starladder-budapest-major-2025
 - StarLadder Budapest Major 2025 半决赛 Spirit vs Vitality，Dust2 与 Mirage 的若干回合。来源：https://www.hltv.org/matches/2388128/spirit-vs-vitality-starladder-budapest-major-2025
 - IEM Cologne Major 2026 第三阶段 Spirit vs 9z，Overpass 的若干回合。来源：https://www.hltv.org/matches/2394986/spirit-vs-9z-iem-cologne-major-2026
 - IEM Cologne Major 2026 半决赛 Spirit vs Falcons，Anubis 的若干回合。来源：https://www.hltv.org/matches/2395001/iem-cologne-major-2026-semi-final-2-iem-cologne-major-2026
