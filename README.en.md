@@ -12,7 +12,7 @@ Windows desktop app · parsed locally · free · Perfect World / 5E / CS2 matchm
 ![Platform](https://img.shields.io/badge/platform-Windows%2010%2F11-0f161d?style=flat-square)
 ![Anti-cheat](https://img.shields.io/badge/anti--cheat-reads%20demos%20only-22c55e?style=flat-square)
 
-> **Language note:** the interface is in Simplified Chinese for now. English, Japanese and Russian are planned.
+> **Language note:** RoundSense is fully available in English (pick it in the first-run guide or in Settings → Language & look; it starts in English on non-Chinese systems). In English, callouts are the names English-speaking players use on each map (Firebox, Short Boost, Popdog…). Japanese and Russian are planned.
 
 ![Overview](images/overview.png)
 
