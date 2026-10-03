@@ -43,7 +43,7 @@ Every conclusion comes from demo data and a deterministic rule engine, with evid
 |---|---|
 | ![Replay](images/replay-lesson.png) | ![3D replay](images/replay-3d.png) |
 
-| Tactical academy | Tactical board |
+| Tactical academy (a pro round plays beside each tactic) | Tactical board |
 |---|---|
 | ![Academy](images/academy.png) | ![Board](images/board.png) |
 

@@ -42,7 +42,7 @@ Windows 桌面应用 · 本地解析 · 免费使用 · 支持完美平台 / 5E 
 |---|---|
 | ![回放](images/replay-lesson.png) | ![3D 回放](images/replay-3d.png) |
 
-| 战术学院 | 战术板 |
+| 战术学院（讲解旁边自动播放职业范例回合） | 战术板 |
 |---|---|
 | ![战术学院](images/academy.png) | ![战术板](images/board.png) |
 
