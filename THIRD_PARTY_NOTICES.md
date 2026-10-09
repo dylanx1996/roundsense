@@ -65,7 +65,9 @@
 - 雷达图与地图坐标变换（`resource/overviews/*.txt`、`panorama/images/overheadmaps/*_radar_psd.vtex_c`）在**运行时从用户本机的 CS2 安装目录只读读取**，不随应用分发。
 - 比赛列表里的地图图片是游戏自己的地图预览图（`panorama/images/map_icons/screenshots/360p/<map>_png.vtex_c`，内嵌 PNG），同样运行时只读读取、只在内存中使用，不随应用分发。
 - `src/core/maps.ts` 中的 Mirage 备用坐标（`pos_x -3230 / pos_y 1713 / scale 5`）是数值事实，仅在找不到 CS2 安装时使用。
-- 道具学院（`src/core/lineups.ts`）的起点/角度/落点来自一场完美平台 Demo 中玩家的真实投掷记录（数值），文字说明为自行撰写。
+- 道具学院（`src/core/lineups*.ts`）的起点/角度/落点是数值事实：荒漠迷城的来自作者在游戏里的实测记录（ADR-0057），其他地图的来自职业比赛 Demo 里的真实投掷（ADR-0049），文字说明为自行撰写。
+- 道具学院的“官方”道具来自游戏自带的地图指南（`pak01_dir.vpk` 中的 `annotations/official/<map>/`，ADR-0059），**运行时从用户本机的 CS2 安装目录只读读取**，只在内存中使用，不随应用分发；说明文字是 Valve 的原文，按原样显示。
+- 随应用发布的道具截图（`data/lineup-shots/`）是作者本人在自己的游戏里截的画面（ADR-0057、ADR-0060），不是从游戏文件里提取的资源。
 - csgove 的发布包里还有 Valve 的 `tier0.dll`、`vaudio_celt.dll`（CS:GO 旧语音格式用的），我们**不复制、不分发**：CS2 的 Opus 语音用不到它们，csgove 只检查文件存在，运行时放两个空文件代替（ADR-0025）。
 - 上线/商业化前需要单独做 IP / 商标审查（roadmap §11.3）。
 
