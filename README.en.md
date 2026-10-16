@@ -76,7 +76,7 @@ Every death's last duel is taken apart: who was ready first, how far off the cro
 - **Utility academy**: smokes, flashes, molotovs and HEs on all 9 competitive maps. The map shows the landing spots; click one for every throw that reaches it.
   - Each lineup: aim shot, landing, throw video (being added), overview; throw type, mouse button, extra keys, difficulty.
   - **Practice steps, one click each**: open the map, practice settings (the round never ends, buy anywhere, grenade trails, unlimited grenades), go to the throw spot, rethrow.
-  - Sources: lineups the author tested in game, the game's own map guides, and community spots collected by GO NADE (marked unverified).
+  - Sources: lineups the author tested in game, the game's own map guides, and common community spots.
 - **Tactical academy**: 63 tactics on 9 maps — the goal, each position's job, the grenades — shown with real rounds from Major matches, explained step by step beside the replay.
 - **Tactical board**: place players and grenades, draw routes, in steps; make one from any moment of a replay and share it.
 
