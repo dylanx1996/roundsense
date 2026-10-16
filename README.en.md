@@ -36,14 +36,14 @@ RoundSense turns it around: **it first tells you which part of the round lost it
 |---|---|
 | ![Coach question](images/quiz.png) | ![Answer](images/quiz-answer.png) |
 
-11 kinds of decisions are checked, counted and asked:
+12 kinds of decisions are checked, counted and asked:
 
 | When | Question |
 |---|---|
 | After the plant (T holding) | Did this fight have to happen? · When the CT started defusing, did you use your molotov? |
 | After the plant (CT retake) | Did you go in together? · Utility before going in? · Did the retake start early enough? |
 | Any time | When a teammate went down, did you trade? · A man up, did you need to take this fight? · He just saw you — did you go out from the same spot again? · Utility before peeking an angle you knew was held? · In a round you can't win, did you keep the gun? |
-| Attack | Going onto the site first, was there a flash for you? |
+| Attack | Going onto the site first, was there a flash for you? · Going onto the site, did you go in together? |
 
 ## Progress as a rate, not a mistake count
 
