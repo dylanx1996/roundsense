@@ -86,3 +86,9 @@
 - StarLadder Budapest Major 2025 四分之一决赛 NAVI vs FURIA，Train 的若干回合。来源：https://www.hltv.org/matches/2388127/furia-vs-natus-vincere-starladder-budapest-major-2025
 - IEM Cologne Major 2026 四分之一决赛 G2 vs Spirit，Overpass 的若干回合。来源：https://www.hltv.org/matches/2394998/match
 - StarLadder Budapest Major 2025 决赛 Vitality vs FaZe，Inferno 的若干回合。来源：https://www.hltv.org/matches/2388130/vitality-vs-faze-starladder-budapest-major-2025
+
+## 社区道具点位（src/core/lineups-community.ts）
+
+- **GO NADE**（https://gonade.app），2026-10-10 收集：每个道具的站位（setpos）、瞄准角度（setang）、投掷方式、鼠标键、额外按键、阵营、难度，以及雷达上的落点位置（换算成游戏坐标）。这些是事实性数据，供玩家在游戏里自己验证（ADR-0068）。
+- **没有复制**它的图片、视频、道具名称和说明文字；软件里的名称、报点和说明都是自己生成的，截图由玩家自己在游戏里截。
+- 软件里这些道具标着“社区 · 待验证”，并注明来源。GO NADE 如果不同意这样使用，就删掉这份数据。
