@@ -2,134 +2,136 @@
 
 # RoundSense
 
-**CS2 赛后复盘教练：不只告诉你“发生了什么”，还告诉你“输在哪一步、当时该怎么选、下一局盯什么”。**
+**A post-match coach for CS2: not just what happened, but which part of the round you lost, what you could have chosen instead, and the one thing to watch next game.**
 
-**简体中文** | [English](README.en.md)
+**English** | [简体中文](README.zh-CN.md)
 
-Windows 桌面应用 · 本地解析 · 免费使用 · 支持完美平台 / 5E / CS2 官方匹配 / FACEIT
+Windows desktop app · parsed locally · free · Perfect World / 5E / CS2 matchmaking / FACEIT demos
 
-[![下载](https://img.shields.io/github/v/release/dylanx1996/roundsense?label=下载&style=flat-square&color=1ed4b3)](https://github.com/dylanx1996/roundsense/releases/latest)
-![平台](https://img.shields.io/badge/平台-Windows%2010%2F11-0f161d?style=flat-square)
-![反作弊](https://img.shields.io/badge/反作弊-只读%20Demo%20·%20不碰游戏进程-22c55e?style=flat-square)
+[![Download](https://img.shields.io/github/v/release/dylanx1996/roundsense?label=download&style=flat-square&color=1ed4b3)](https://github.com/dylanx1996/roundsense/releases/latest)
+![Platform](https://img.shields.io/badge/platform-Windows%2010%2F11-0f161d?style=flat-square)
+![Anti-cheat](https://img.shields.io/badge/anti--cheat-reads%20demos%20only-22c55e?style=flat-square)
 
-![回放复盘](images/replay-review.png)
+![Replay review](images/en/replay-review.png)
 
 </div>
 
-## 为什么用 RoundSense
+## Why RoundSense
 
-看 Demo 很累：一局 20 多个回合，拖着进度条找“我到底哪里打得不好”，最后往往只记得“对枪输了”。
+Watching demos is tiring: twenty-odd rounds, dragging the timeline around looking for what you did wrong, and in the end you remember "lost the aim duel".
 
-RoundSense 把这件事反过来：**先告诉你这一回合是在哪个阶段输掉的，再把那个阶段里每一个决定拿出来问你一次。**
+RoundSense turns it around: **it first tells you which part of the round lost it, then asks you about every decision in that part.**
 
-- **讲在点上。** 下包后输掉的回合，第一张卡片就是「守包复盘」：CT 从哪里回防、谁走出去和人远距离对枪、最后一个人倒下时炸弹还剩几秒、再拖几秒 CT 就拆不完。不会在你已经守包的时候，还在说“进点时缺一颗闪”。
-- **判断公道。** 每条判断都写明检查过哪些情况：出去打断拆包、和队友一起拉、残局保枪……这些都不会被判成错。回合结束后才知道的信息（敌人真实位置、结果）标着“事后看”，只用来解释，不用来评判当时的决定。
-- **让你自己先想。** 「教练提问」把你带回做决定之前的那一刻：只显示你当时能知道的，没看到的敌人、回合结果、之后的击杀都藏起来，先选一个做法，再看教练怎么说。
-- **看得到进步。** 每个决定都算一次机会，不管结果如何。进步页告诉你“人数领先时主动去拉：51 次机会，可以更好 32%，最近比前几场少了”，而不是“你又犯了 3 次错”。
-- **结论有证据。** 所有判断都来自 Demo 数据和确定性的规则，点一下就跳到那一刻。不需要 AI，也不需要联网。
+- **On point.** Lost after the plant? The first card is the post-plant review: where the retake came from, who walked out into a long duel, how much time was left on the bomb when the last T fell, how many more seconds would have beaten the defuse. It won't tell you about a missing entry flash while you were already holding the bomb.
+- **Fair.** Every call lists what it checked first: going out to stop a defuse, peeking together with a teammate, saving in a lost round… none of these are called mistakes. What was only known after the round (where enemies really were, how it ended) is marked *hindsight*: it explains, it isn't what the decision is judged on.
+- **You think first.** *Coach questions* take you back to just before a decision with only what you knew then: unseen enemies, the round result and later kills are hidden. Pick what you would do, then see the coach's view.
+- **Progress you can see.** Every decision counts as an opportunity, whatever the result. The progress page says "peeking while a man up: 51 chances, 32% could be better, fewer than in your earlier matches" — not "you made the mistake 3 more times".
+- **Evidence for everything.** Every call comes from the demo data and deterministic rules; one click jumps to the moment. No AI and no internet needed.
 
-## 教练提问：先自己判断，再看教练怎么说
+## Coach questions: judge first, then see the coach's view
 
-| 回到做决定之前，只给当时知道的信息 | 选完以后：每个选项的评价、你的选择、比赛里的实际做法 |
+| Back to just before the decision, with only what you knew | After you answer: every option rated, your pick, what was done in the match |
 |---|---|
-| ![教练提问](images/quiz.png) | ![揭晓](images/quiz-answer.png) |
+| ![Coach question](images/en/quiz.png) | ![Answer](images/en/quiz-answer.png) |
 
-现在有 12 类决定会被检查、计数，也都能出成题：
+14 kinds of decisions are checked, counted and asked:
 
-| 阶段 | 问题 |
+| When | Question |
 |---|---|
-| 下包后（T 守包） | 这一枪非打不可吗？· CT 开始拆包时，你身上的火用上了吗？ |
-| 下包后（CT 回防） | 你们是一起进的吗？· 进点前用道具了吗？· 回防开始得够早吗？ |
-| 任何时候 | 队友倒下时，你补上了吗？· 人数领先时，这一枪需要你主动去打吗？· 他刚看到过你，你又从同一个地方出去了吗？· 拉一个知道有人的角度前，先用道具了吗？· 赢不了的残局，枪保下来了吗？ |
-| 进攻 | 第一个进点时，有闪给你开路吗？· 进点时，你们是一起进的吗？ |
+| After the plant (T holding) | Did this fight have to happen? · When the CT started defusing, did you use your molotov? |
+| After the plant (CT retake) | Did you go in together? · Utility before going in? · Did the retake start early enough? |
+| Early round | You walked into the round’s first fight — could a teammate trade you? |
+| Any time | When a teammate went down, did you trade? · A man up, did you need to take this fight? · He just saw you — did you go out from the same spot again? · Utility before peeking an angle you knew was held? · In a round you can't win, did you keep the gun? |
+| Attack | Going onto the site first, was there a flash for you? · Going onto the site, did you go in together? |
+| Defence | A site went empty — were you the one to cover it? |
 
-## 进步看比例，不看犯错次数
+## Progress as a rate, not a mistake count
 
-![决策机会](images/decisions.png)
+![Decisions](images/en/decisions.png)
 
-- 每个问题一行：多少次机会，其中可以更好、有风险、做得好、不评价各几次。
-- 每场一个方块，点一下跳到那场第一次可以更好的时刻。
-- 前几场和最近几场比，“进步了 / 变差了”一眼就看出来；做题的判断和教练越来越一致，也会显示出来。
+- One row per question: how many chances, and how many could be better, were risky, were good, or weren't judged.
+- A square per match; click it to jump to that match's first improvable moment.
+- Earlier matches against recent ones: *improved / worse* at a glance; how often your answers agree with the coach shows too.
 
-## 回放：一屏看清这一回合
+## Replay: the whole round on one screen
 
-- **右侧面板按“这回合输在哪个阶段”排**：决定胜负的那一段排第一、标“胜负在这里”，其他阶段折叠成一行结论。
-- **玩家列表固定在最上面**：血量做底色，护甲 / 头盔、手里的枪、身上还有的烟闪火雷、钱，一眼看全；死了就划掉。
-- **时间轴分阶段**：开局 → 进攻 → 下包后，上面是阵亡和高光，下面是回合转折点和你的问题。
-- **2D / 3D**：本机 CS2 的雷达图和 1:1 地图模型，视野锥、道具、击杀线、烟的真实形状（烟灭火、手雷炸开烟都有）、闪光白屏、C4；可以切到你、阵亡者或击杀者的第一人称。
-- **三种视角**：全局真相 / 你们队当时知道的 / 你本人当时知道的，按住按钮看真相。
-- **同步播放 Demo 里录到的游戏内语音**，可以只听己方或敌方。
-- **一键在 CS2 里打开**这场 Demo 的这一刻，对照着看。
+- **The side panel is ordered by the phase that decided the round**: that phase comes first, marked "decided here"; the others fold into one line.
+- **A pinned player list**: health as the row background, armour / helmet, gun, the grenades still on each player, money; dead players struck through.
+- **A phased timeline**: early → attack → after the plant, deaths and highlights above, the turning point and your problems below.
+- **2D / 3D** from your CS2 install's radar and 1:1 map models: view cones, grenades, kill lines, smokes in their real shape (smoke putting out fires, HE blowing smokes open), flash white-out, the bomb; first person for you, the victim or the killer.
+- **Three views**: the real truth / what your team knew / what you knew; hold a button for the truth.
+- **The demo's in-game voice** plays in sync; your side or the enemy's only.
+- **Open the moment in CS2** with one click.
 
-## 死亡复盘：我为什么死？
+## Death review: why did I die?
 
-每次死亡都拆开最后一次对枪：谁先准备好、预瞄偏了几度、反应多快、有没有急停、打中没有、有没有队友能补枪（按队友沿地图实际跑过去要几秒算，不穿墙）。最后给出一个主要原因和“下次这样做”。决策没问题、只是枪法输了，也会直接告诉你“打法不用改，练枪”。
+Every death's last duel is taken apart: who was ready first, how far off the crosshair was, reaction time, counter-strafing, hits, and whether a teammate could have traded (by how long he'd actually need to run, walls included). It ends with one main cause and what to do next time — and if the decision was fine and only the aim lost, it says so: keep playing like this, practise the aim.
 
-## 学怎么打
+## Learn how to play it
 
-| 道具学院 | 战术学院 |
+| Utility academy | Tactical academy |
 |---|---|
-| ![道具学院](images/lineup.png) | ![战术学院](images/academy.png) |
+| ![Utility academy](images/en/lineup.png) | ![Tactical academy](images/en/academy.png) |
 
-- **道具学院**：9 张竞技图的烟、闪、火、雷。地图上只显示落点，点开看能扔到那里的所有投法。
-  - 每个道具：瞄点图、落地效果、投掷视频（陆续补充）、总览；投掷方式、左右键、额外按键、难度。
-  - **练习步骤一键复制**：打开地图、练习设置（回合不结束、随处买、显示投掷轨迹、道具无限）、站到投掷点、重扔上一颗。
-  - 来源：作者在游戏里实测的精选、游戏自带的官方地图指南、社区常用点位。
-- **战术学院**：9 张图共 63 个战术，讲清楚目标、每个位置做什么、用哪些道具，再用 Major 职业比赛的真实回合演示，回放旁边逐段讲解。
-- **战术板**：摆人、摆道具、画路线，分步骤；可以从回放的某一刻直接生成，导出给队友。
+- **Utility academy**: smokes, flashes, molotovs and HEs on all 9 competitive maps. The map shows the landing spots; click one for every throw that reaches it.
+  - Each lineup: aim shot, landing, throw video (being added), overview; throw type, mouse button, extra keys, difficulty.
+  - **Practice steps, one click each**: open the map, practice settings (the round never ends, buy anywhere, grenade trails, unlimited grenades), go to the throw spot, rethrow.
+  - Sources: lineups the author tested in game, the game's own map guides, and common community spots.
+- **Tactical academy**: 63 tactics on 9 maps — the goal, each position's job, the grenades — shown with real rounds from Major matches, explained step by step beside the replay.
+- **Tactical board**: place players and grenades, draw routes, in steps; make one from any moment of a replay and share it.
 
-| 3D 回放（本机 CS2 的地图模型） | 地图库：3D 自由视角 |
+| 3D replay (your CS2 install's map models) | Map library in free 3D |
 |---|---|
-| ![3D 回放](images/replay-3d.png) | ![地图](images/map-3d.png) |
+| ![3D replay](images/en/replay-3d.png) | ![Map](images/en/map-3d.png) |
 
-## 更多功能
+## More
 
-| 功能 | 说明 |
+| Feature | What it does |
 |---|---|
-| 自动导入 | 监听完美平台的 Demo 文件夹、CS2 的 `replays` 文件夹和你添加的文件夹，也可以拖进窗口；打完一局会弹出通知 |
-| 本场速览 | 结果、Rating、MVP / 战犯，一个最该改的问题、一个值得复盘的回合、一个值得录下来的高光；一键复制成图片 |
-| 回合局势 / 防守站位 | 9 张竞技图：进攻发起时队伍在打什么、缺什么，你更合理的职责；CT 开局怎么站、哪块空了、谁最该补位 |
-| 地图分析 | 死亡 / 击杀热区、常见角度、进攻路线 |
-| 高光时刻 | 3 杀以上、赢下的残局、刀杀，标出录像片段，一键在 CS2 里打开 |
-| 训练目标 | 最多 3 个目标，每场自动更新进度 |
-| 这条不准 | 觉得哪条判断不对，一键选原因标记掉，它就不再计入统计；还能导出成匿名的测试样本发给作者，让规则以后不再犯同样的错 |
+| Auto import | Watches the Perfect World demo folder, CS2's `replays` and folders you add; or drag files in; a notification after each match |
+| Match at a glance | Result, Rating, MVP, the one thing to fix, the round worth rewatching, the clip worth recording; copy it as an image |
+| Round situation / defence | All 9 maps: what the attack was doing and missing, your better role; how the CTs set up, which area opened, who should have filled it |
+| Map analysis | Death / kill heat maps, common angles, attack routes |
+| Highlights | 3K+, clutches, knife kills, with the clip marked and opened in CS2 in one click |
+| Training goals | Up to 3 goals, updated after every match |
+| "This is wrong" | Disagree with a call? Mark it with a reason and it leaves every count; export it as an anonymous test case for the author, so the rule can't make that mistake again |
 
-## 下载与安装
+## Download
 
-1. 到 [Releases](https://github.com/dylanx1996/roundsense/releases/latest) 下载最新的 `RoundSense-vX.Y.Z-win-x64-CN.zip`（中文版；`-EN.zip` 是英文版，两个程序一样，只是第一次打开的语言不同）。
-2. 解压到任意文件夹，双击 **`RoundSense.exe`**，不用安装。
-3. 第一次打开会有新手引导，教你在各个平台怎么下载 Demo。
+1. Get the latest `RoundSense-vX.Y.Z-win-x64-EN.zip` from [Releases](https://github.com/dylanx1996/roundsense/releases/latest) (`-CN.zip` is the same program starting in Chinese).
+2. Unzip anywhere and run **`RoundSense.exe`** — no installer.
+3. The first-run guide shows how to get your demos on each platform.
 
-**系统要求**：Windows 10 / 11（64 位）。建议装好 Steam 版 CS2：雷达底图、地图图片和 3D 地图都从本机的 CS2 读取，本软件不分发任何游戏资源。没装 CS2 也能分析，只是没有这些画面。
+**Requirements**: Windows 10 / 11 (64-bit). Steam CS2 installed is recommended: radar images, map pictures and 3D maps are read from your own install; RoundSense ships no game assets. Without CS2 the analysis still works, without those pictures.
 
-**升级**：在「关于」里点“检查更新”，下载新版本 zip，覆盖原来的文件夹即可。你的数据保存在 `%APPDATA%\RoundSense`，不受影响。
+**Updating**: About → Check for updates, download the new zip and unzip it over the old folder. Your data lives in `%APPDATA%\RoundSense` and stays.
 
-## 怎么拿到比赛 Demo
+## Getting your demos
 
-| 平台 | 怎么下载 | 导入方式 |
+| Platform | How to download | Import |
 |---|---|---|
-| **完美平台** | 完美客户端 → 比赛记录 → 下载 Demo | 自动导入（会一直监听 `%APPDATA%\Wmpvp\demo`） |
-| **5E 平台** | 5E 客户端 / 官网 → 比赛记录 → 下载 DEMO | 把下载文件夹加入监听，之后自动导入 |
-| **CS2 官方匹配** | 游戏内「观看 → 你的比赛 → 下载」 | 自动导入 |
-| **FACEIT / 其他** | 下载 `.dem` / `.dem.zst` / `.dem.gz` / `.zip` | 拖进窗口，或者放进监听的文件夹 |
+| **Perfect World** | Client → match history → download demo | Automatic (`%APPDATA%\Wmpvp\demo` is watched) |
+| **5E** | Client / website → match history → download demo | Add the download folder once; automatic after that |
+| **CS2 matchmaking** | In game: Watch → Your matches → download | Automatic |
+| **FACEIT / others** | Download `.dem` / `.dem.zst` / `.dem.gz` / `.zip` | Drag into the window, or put it in a watched folder |
 
-## 安全与隐私
+## Safety and privacy
 
-- **不碰游戏进程**：只读取 Demo 文件和 CS2 安装目录里的地图资源。不读内存、不注入、不抓包，比赛中不显示任何东西，和 VAC / 反作弊无关。
-- **默认不联网**：Demo、分析结果、比赛记录都保存在本机。只有你点“检查更新”或者勾选了“每天自动检查一次”时，才会向 GitHub 查询最新版本号，查询不带任何数据。
-- **AI 可选**：所有分析都不需要 AI。开启后只发送这次分析需要的结构化数据，不发送 Demo、文件路径或账号信息。
+- **Never touches the game**: it reads demo files and the map assets in your CS2 folder. No memory reading, no injection, no packet capture, nothing shown during a match — nothing to do with VAC or anti-cheat.
+- **Offline by default**: demos, analyses and history stay on your PC. Only "check for updates" (or the daily check you can turn on) asks GitHub for the latest version number, sending nothing.
+- **AI is optional**: nothing needs it. Turned on, it gets only the structured data of the analysis — no demo, file paths or account data.
 
-## 反馈与支持
+## Feedback and support
 
-- 遇到问题或者有建议：在软件里「关于 → 反馈问题」填好，会在浏览器里打开一个填好的 Issue。也可以直接 [新建 Issue](https://github.com/dylanx1996/roundsense/issues/new)。
-- 软件里「关于 → 支持作者」可以请作者喝杯咖啡。不打赏也完全不影响使用，所有功能永远免费。赞助的朋友可以领取纯外观的赞助者礼包：3D 回放里的专属 CT / T 人物模型、全息赞助者名片、4 款限定主题、标题栏流光名牌、分享图专属边框。
+- Problems or ideas: About → Report a problem opens a filled-in issue in your browser, or [open an issue](https://github.com/dylanx1996/roundsense/issues/new).
+- About → Support the author. Everything stays free whether you support or not; supporters get a purely cosmetic pack: their own CT / T player models in the 3D replay, a holographic supporter card, 4 limited themes, a glowing title-bar name and a share-image frame.
 
-## 语言
+## Languages
 
-界面有简体中文和英文：第一次打开的新手引导里就能选，以后在「设置 → 语言与外观」里切换。英文版里的报点用英语玩家自己的叫法。
+English and Simplified Chinese: pick one in the first-run guide, switch later in Settings → Language & look. Callouts are the names English-speaking players use on each map.
 
-## 许可
+## Licence
 
-RoundSense 可以免费下载、免费使用，源代码不公开。使用条款见 [LICENSE.md](LICENSE.md)，第三方组件见 [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md)。
+RoundSense is free to download and use; the source is not published. Terms in [LICENSE.md](LICENSE.md), third-party components in [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md).
 
-© 2026 dylan su。Counter-Strike、CS2 是 Valve Corporation 的商标。本项目与 Valve、完美世界、5EPlay 无关联。
+© 2026 dylan su. Counter-Strike and CS2 are trademarks of Valve Corporation. Not affiliated with Valve, Perfect World or 5EPlay.
