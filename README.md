@@ -94,17 +94,17 @@ Every death's last duel is taken apart: who was ready first, how far off the cro
 | Map analysis | Death / kill heat maps, common angles, attack routes |
 | Highlights | 3K+, clutches, knife kills, with the clip marked and opened in CS2 in one click |
 | Training goals | Up to 3 goals, updated after every match |
-| "This is wrong" | Disagree with a call? Mark it with a reason and it leaves every count; export it as an anonymous test case for the author, so the rule can't make that mistake again |
+| "This is wrong" | Disagree with a call? Mark it with a reason and it leaves every count; export it, with SteamIDs and names removed, as a test case for the author, so the rule can't make that mistake again |
 
 ## Download
 
-1. Get the latest `RoundSense-vX.Y.Z-win-x64-EN.zip` from [Releases](https://github.com/dylanx1996/roundsense/releases/latest) (`-CN.zip` is the same program starting in Chinese).
-2. Unzip anywhere and run **`RoundSense.exe`** — no installer.
+1. Get the latest **`RoundSense-Setup-X.Y.Z.exe`** from [Releases](https://github.com/dylanx1996/roundsense/releases/latest).
+2. Run it: pick the language (English / 中文), read and accept the licence agreement, choose the folder. No administrator rights needed.
 3. The first-run guide shows how to get your demos on each platform.
 
 **Requirements**: Windows 10 / 11 (64-bit). Steam CS2 installed is recommended: radar images, map pictures and 3D maps are read from your own install; RoundSense ships no game assets. Without CS2 the analysis still works, without those pictures.
 
-**Updating**: About → Check for updates, download the new zip and unzip it over the old folder. Your data lives in `%APPDATA%\RoundSense` and stays.
+**Updating**: click "Check for updates" at the top right; when there is a new version, "Update now", then "Restart to update". Your data lives in `%APPDATA%\RoundSense` and is kept through updates and uninstalls. Coming from the zip version: install once, your data carries over.
 
 ## Getting your demos
 
@@ -118,7 +118,8 @@ Every death's last duel is taken apart: who was ready first, how far off the cro
 ## Safety and privacy
 
 - **Never touches the game**: it reads demo files and the map assets in your CS2 folder. No memory reading, no injection, no packet capture, nothing shown during a match — nothing to do with VAC or anti-cheat.
-- **Offline by default**: demos, analyses and history stay on your PC. Only "check for updates" (or the daily check you can turn on) asks GitHub for the latest version number, sending nothing.
+- **Your data stays on your PC**: demos, analyses and history are stored and analysed locally. "Check for updates" (or the daily check you can turn on) asks GitHub for the latest version number, sending nothing.
+- **User experience improvement programme (optional, off by default)**: only if you agree, the app sends usage statistics at most once a day — a random install number, the app version and the interface language — to count devices and versions. The number stays the same, so the statistics are pseudonymised rather than fully anonymous; no demos, match data, SteamIDs, names, file paths or AI keys are sent. The service runs on Cloudflare (United States) and records are deleted after about 400 days; leave any time in About, which also asks for your records to be deleted. See the [Privacy Policy](PRIVACY.md).
 - **AI is optional**: nothing needs it. Turned on, it gets only the structured data of the analysis — no demo, file paths or account data.
 
 ## Feedback and support
@@ -132,6 +133,10 @@ English and Simplified Chinese: pick one in the first-run guide, switch later in
 
 ## Licence
 
-RoundSense is free to download and use; the source is not published. Terms in [LICENSE.md](LICENSE.md), third-party components in [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md).
+RoundSense is free to download and use, but it is not open source: the source code is not published or licensed under an open-source licence. Terms of use: [End User Licence Agreement](EULA.md); personal information: [Privacy Policy](PRIVACY.md); third-party components: [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md).
+
+RoundSense is independently developed third-party review software and has no affiliation with, sponsorship by, licence from or endorsement by Valve Corporation. Counter-Strike and the related names, trademarks and game assets belong to their respective owners.
+
+Copyright © 2026 Dylan Su. All rights reserved.
 
 © 2026 dylan su. Counter-Strike and CS2 are trademarks of Valve Corporation. Not affiliated with Valve, Perfect World or 5EPlay.
